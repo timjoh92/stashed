@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Stashed</title>
-<meta name="description" content="Stashed – Wardrobe keeps your clothes and photos on your iPhone. It sends anonymous usage counts to Amplitude (EU) unless you turn that off, and an approximate location to Apple for the weather.">
+<meta name="description" content="Stashed – Wardrobe keeps your clothes and photos on your iPhone. It sends anonymous usage counts to PostHog (EU) unless you turn that off, and an approximate location to Apple for the weather.">
 <link rel="icon" href="../assets/icon.jpg">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -26,12 +26,12 @@
 <p>Your garments, their photos and cut-outs, their details (type, colors, material, brand, price, notes and so on), your styles and your settings are stored only on your iPhone, inside the app. They are never sent to us or to anyone else. We have no server. Apart from the usage counts and the weather described below, the app makes no network connections.</p>
 
 <h2>Anonymous usage counts</h2>
-<p>To learn which features people use and what keeps them using the app, Stashed sends anonymous usage events to Amplitude, our analytics provider, which processes them on our behalf. This is on by default and you can turn it off at any time in Profile → Help improve Stashed.</p>
+<p>To learn which features people use and what keeps them using the app, Stashed sends anonymous usage events to PostHog, our analytics provider, which processes them on our behalf. This is on by default and you can turn it off at any time in Profile → Help improve Stashed.</p>
 <ul>
-<li><strong>What is sent:</strong> events such as “a garment was added”, “a style was opened” or “a filter was used”, with simple counts and categories (for example how many garments you have, or the type of a garment, such as “Jackets”). Also the app version, your iPhone model, iOS version and language, and a random install ID that is not linked to you.</li>
-<li><strong>What is never sent:</strong> your photos or cut-outs, the names of your garments or styles, brands, notes, prices, or anything you type. There is no account, and your name, email address and the advertising identifier are never used. We do not store your IP address or location from these events.</li>
-<li><strong>Where:</strong> the events go to Amplitude’s data center in the EU, and are not used for advertising or sold.</li>
-<li><strong>Turning it off:</strong> switch off Profile → Help improve Stashed. The app then stops sending new events (anything already waiting to be sent, at most about half a minute of use, may still go out). Deleting the app removes the random install ID from your iPhone.</li>
+<li><strong>What is sent:</strong> events such as “a garment was added”, “a style was opened” or “a filter was used”, with simple counts and categories (for example how many garments you have, or the type of a garment, such as “Jackets”). Also what PostHog’s library adds to every event: the app version and build, your iPhone model (the general kind, such as “iPhone”), iOS version, language, time zone, screen size, whether you are on Wi-Fi or cellular, and whether the app is a TestFlight build. Plus a random install ID and a session ID that change nothing about who you are and are not linked to you. No profile of you is created.</li>
+<li><strong>What is never sent:</strong> your photos or cut-outs, the names of your garments or styles, brands, notes, prices, or anything you type. There is no account, and your name, email address and the advertising identifier are never used. We do not store your IP address or work out your location from these events: your IP address passes through PostHog’s servers on the way, is not stored, and the app tells PostHog not to derive a location from it (PostHog may use it briefly to spot bots).</li>
+<li><strong>Where:</strong> the events go to PostHog’s cloud in the EU (Frankfurt), and are not used for advertising or sold.</li>
+<li><strong>Turning it off:</strong> switch off Profile → Help improve Stashed. The app then never starts PostHog: nothing is sent and PostHog is not contacted. When it is on, PostHog’s library fetches its remote settings once each time the app starts, which carries no data about you. Deleting the app removes the random install ID from your iPhone.</li>
 </ul>
 
 <h2>Weather</h2>
@@ -50,7 +50,7 @@
 <ul>
 <li>No account or sign-in.</li>
 <li>No tracking across apps or websites, and no advertising.</li>
-<li>The only third-party code in the app is Amplitude’s analytics library, described above.</li>
+<li>The only third-party code in the app is PostHog’s analytics library, described above.</li>
 <li>No selling of data, and nothing shared except the anonymous usage events above.</li>
 </ul>
 
