@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Stashed</title>
-<meta name="description" content="Stashed – Wardrobe does not collect any data. Everything stays on your iPhone.">
+<meta name="description" content="Stashed – Wardrobe keeps your clothes and photos on your iPhone. It sends anonymous usage counts to PostHog (EU) unless you turn that off, and an approximate location to Apple for the weather.">
 <link rel="icon" href="../assets/icon.jpg">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -19,11 +19,23 @@
 </div></header>
 <main class="wrap">
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: 10 November 2026</p>
-<p>Stashed – Wardrobe (“Stashed”, “the app”) is made by Tim Johansson. This policy explains what happens to your information when you use the app. The short version: <strong>Stashed does not collect any data. Everything you put in the app stays on your iPhone.</strong></p>
+<p class="meta">Effective date: 17 November 2026</p>
+<p>Stashed – Wardrobe (“Stashed”, “the app”) is made by Tim Johansson. This policy explains what happens to your information when you use the app. The short version: <strong>Everything you put in the app stays on your iPhone. The app sends only anonymous counts of which features are used, and you can turn that off.</strong> The only other thing that leaves your iPhone is an approximate location for the weather, sent to Apple only if you turn the weather on.</p>
 
 <h2>What the app stores, and where</h2>
-<p>Your garments, their photos and cut-outs, their details (type, colors, material, brand, price, notes and so on), your styles and your settings are stored only on your iPhone, inside the app. They are never sent to us or to anyone else. We have no server, and the app makes no network connections.</p>
+<p>Your garments, their photos and cut-outs, their details (type, colors, material, brand, price, notes and so on), your styles and your settings are stored only on your iPhone, inside the app. They are never sent to us or to anyone else. We have no server. Apart from the usage counts and the weather described below, the app makes no network connections.</p>
+
+<h2>Anonymous usage counts</h2>
+<p>To learn which features people use and what keeps them using the app, Stashed sends anonymous usage events to PostHog, our analytics provider, which processes them on our behalf. This is on by default and you can turn it off at any time in Profile → Help improve Stashed.</p>
+<ul>
+<li><strong>What is sent:</strong> events such as “a garment was added”, “a style was opened” or “a filter was used”, with simple counts and categories (for example how many garments you have, or the type of a garment, such as “Jackets”). Also what PostHog’s library adds to every event: the app version and build, your iPhone model (the general kind, such as “iPhone”), iOS version, language, time zone, screen size, whether you are on Wi-Fi or cellular, and whether the app is a TestFlight build. Plus a random install ID and a session ID that change nothing about who you are and are not linked to you. No profile of you is created.</li>
+<li><strong>What is never sent:</strong> your photos or cut-outs, the names of your garments or styles, brands, notes, prices, or anything you type. There is no account, and your name, email address and the advertising identifier are never used. We do not store your IP address or work out your location from these events: your IP address passes through PostHog’s servers on the way, is not stored, and the app tells PostHog not to derive a location from it (PostHog may use it briefly to spot bots).</li>
+<li><strong>Where:</strong> the events go to PostHog’s cloud in the EU (Frankfurt), and are not used for advertising or sold.</li>
+<li><strong>Turning it off:</strong> switch off Profile → Help improve Stashed. If the app starts with it off, PostHog is never started: nothing is sent and PostHog is not contacted. If you switch it off while the app is open, no new events are recorded; events already waiting to be sent (about half a minute of use) may still go out, or stay on your iPhone unsent while it is off. When it is on, PostHog’s library fetches its remote settings once each time the app starts, which carries no data about you. Deleting the app removes the random install ID from your iPhone.</li>
+</ul>
+
+<h2>Weather</h2>
+<p>The wardrobe can show today’s weather. It asks for your location only when you tap the weather, and you can say no or turn it off at any time in Settings. When it is on, the app rounds your location to an area about a kilometre wide and sends only that to Apple, through Apple’s WeatherKit and Maps, to get the forecast and the name of your town. It is not linked to you, not sent to us, and not stored by the app. Apple handles it under its own privacy policy. Weather data is provided by Apple Weather.</p>
 
 <h2>Camera and photos</h2>
 <ul>
@@ -37,8 +49,9 @@
 <h2>What we do not do</h2>
 <ul>
 <li>No account or sign-in.</li>
-<li>No analytics, tracking or advertising, and no third-party SDKs.</li>
-<li>No selling or sharing of data, because we do not have any.</li>
+<li>No tracking across apps or websites, and no advertising.</li>
+<li>The only third-party code in the app is PostHog’s analytics library, described above.</li>
+<li>No selling of data, and nothing shared except the anonymous usage events above.</li>
 </ul>
 
 <h2>Export and backups</h2>
@@ -51,7 +64,7 @@
 <p>Delete a garment or style in the app to remove it. Deleting the app removes all of its data from your iPhone.</p>
 
 <h2>Children</h2>
-<p>The app does not collect personal information from anyone, including children.</p>
+<p>The app does not collect personal information from anyone, including children. The usage events are anonymous and contain nothing a person types or photographs.</p>
 
 <h2>This website</h2>
 <p>This website is hosted on GitHub Pages. It uses no cookies, analytics or third-party scripts, and loads nothing from other sites. GitHub may log visitors’ IP addresses for security, as described in <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
